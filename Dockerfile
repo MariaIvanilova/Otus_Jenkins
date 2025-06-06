@@ -57,6 +57,6 @@ RUN mkdir -p /app/allure-results && chmod -R 777 /app/allure-results
 
 # Запуск тестов
 # ENTRYPOINT ["python", "-m", "pytest"]
-# CMD []
+CMD []
 # Точка входа для генерации отчетов
-CMD ["sh", "-c", "pytest --alluredir=/app/allure-results && allure serve /app/allure-results"]
+# CMD ["sh", "-c", "pytest --alluredir=/app/allure-results && allure serve /app/allure-results"]
