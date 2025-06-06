@@ -40,8 +40,8 @@ services:
 
   tests:
     image: opencart-tests
-    volumes:
-      - ./allure-results:/app/allure-results
+#    volumes:
+#      - ./allure-results:/app/allure-results
     environment:
       - OPENCART_URL=http://${LOCAL_IP}:${OPENCART_PORT}
       - BROWSER=${BROWSER:-chrome}
