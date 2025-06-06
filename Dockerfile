@@ -50,6 +50,8 @@ COPY . .
 
 RUN chmod +x wait-for-it.sh
 
+RUN mkdir -p /app/logs
+
 # Установка правильных прав для отчетов
 RUN mkdir -p /app/allure-results && chmod -R 777 /app/allure-results
 
